@@ -2,16 +2,16 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Home = () => {
+const Updates = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="bg-zinc-800 min-h-full">
       <View>
-        <Text className="text-xl font-bold text-green-900">Home</Text>
+        <Text>Updates</Text>
       </View>
     </SafeAreaView>
   );
 };
 
-export default Home;
+export default Updates;
 
 const styles = StyleSheet.create({});

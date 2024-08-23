@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const Profile = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="bg-zinc-800 min-h-full">
       <View>
         <Text className="text-xl font-bold text-green-900">Profile</Text>
       </View>

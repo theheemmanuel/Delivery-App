@@ -10,7 +10,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home" component={FirstPage} />
+        {/* <Stack.Screen name="Home" component={FirstPage} /> */}
         <Stack.Screen name="Tabs" component={BottomTabs} />
       </Stack.Navigator>
       <StatusBar style="auto" />
