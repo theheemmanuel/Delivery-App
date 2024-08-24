@@ -13,14 +13,14 @@ const Onboarding4 = ({ navigation }) => {
         />
       </View>
       <Text className="text-[#ff9d01] font-bold text-[26px]">
-        All your favourites restaurants
+        Eat it in your own crazy comfort
       </Text>
       <Text className="text-[#161616] font-bold text-[18px] text-center w-3/4">
         Want a food for your mood? Get your tummies filled with the edible good
       </Text>
       <TouchableOpacity
         className="bg-[#ff9d01] w-3/4 py-4 rounded-lg"
-        onPress={() => navigation.navigate("Login")}
+        onPress={() => navigation.navigate("SignUp")}
       >
         <Text className="text-[20px] text-white text-center font-bold rounded-xl">
           Get Started
