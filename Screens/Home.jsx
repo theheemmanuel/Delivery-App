@@ -10,7 +10,7 @@ const Home = () => {
         keyExtractor={(item) => item.id}
         ListHeaderComponent={() => (
           <View>
-            <Text>Home</Text>
+            <Text className="text-white font-bold text-3xl">Home</Text>
           </View>
         )}
       />
