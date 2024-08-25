@@ -12,8 +12,12 @@ const BottomTabs = () => {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: "tomato",
-        tabBarStyle: { backgroundColor: "black", height: 60 },
+        tabBarActiveTintColor: "#ff9d01",
+        tabBarStyle: {
+          backgroundColor: "black",
+          height: 60,
+          marginTop: 2,
+        },
       }}
     >
       <Tab.Screen name="Home" component={Home} />

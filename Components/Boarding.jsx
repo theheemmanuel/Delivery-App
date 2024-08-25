@@ -9,6 +9,8 @@ import Login from "../Screens/Login";
 import SignUp from "../Screens/SignUp";
 import ForgotPassword from "../Screens/ForgotPassword";
 import OTP from "../Screens/OTP";
+import ResetPassword from "../Screens/ResetPassword";
+import Success from "../Screens/Success";
 
 const Boarding = () => {
   const Stack = createNativeStackNavigator();
@@ -23,6 +25,8 @@ const Boarding = () => {
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Forgot" component={ForgotPassword} />
         <Stack.Screen name="OTP" component={OTP} />
+        <Stack.Screen name="ResetPassword" component={ResetPassword} />
+        <Stack.Screen name="Success" component={Success} />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </>

@@ -10,10 +10,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Home1" component={Boarding} />
+        {/* <Stack.Screen name="Home1" component={Boarding} /> */}
         <Stack.Screen name="Tabs" component={BottomTabs} />
       </Stack.Navigator>
-      <StatusBar style="auto" />
+      <StatusBar style="auto" backgroundColor="white" />
     </NavigationContainer>
   );
 }

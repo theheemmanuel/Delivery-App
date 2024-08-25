@@ -26,7 +26,7 @@ const ForgotPassword = ({ navigation }) => {
           Forgot Password
         </Text>
         <Text className="text-center font-semibold text-xl">
-          Don’t worry! It happens. Please enter the address associated with your
+          Don’t worry! It happens. Please enter the Email address associated with your
           account.
         </Text>
 
