@@ -9,7 +9,7 @@ const Settings = () => {
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      
+      <Stack.Screen />
     </Stack.Navigator>
   );
 };
