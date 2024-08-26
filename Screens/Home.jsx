@@ -6,16 +6,72 @@ import {
   View,
   TouchableOpacity,
 } from "react-native";
-import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Mood from "../Components/Mood";
+import Popular from "../Components/Popular";
 
 const Home = () => {
+  const moodImages = [
+    {
+      id: 1,
+      source: require("../assets/Images/Rectangle 25.png"),
+      title: "Snacks",
+    },
+    {
+      id: 2,
+      source: require("../assets/Images/Rectangle 27.png"),
+      title: "Pizza",
+    },
+    {
+      id: 3,
+      source: require("../assets/Images/Rectangle 25.png"),
+      title: "Chinese",
+    },
+    {
+      id: 4,
+      source: require("../assets/Images/Rectangle 27.png"),
+      title: "Desserts",
+    },
+    {
+      id: 5,
+      source: require("../assets/Images/Rectangle 25.png"),
+      title: "Biryani",
+    },
+  ];
+
+  const popularImages = [
+    {
+      id: 1,
+      source: require("../assets/Images/Domino's_pizza_logo 1.png"),
+      title: "Dominos",
+    },
+    {
+      id: 2,
+      source: require("../assets/Images/Starbucks_Corporation_Logo_2011 1.png"),
+      title: "Starbucks",
+    },
+    {
+      id: 3,
+      source: require("../assets/Images/Domino's_pizza_logo 1.png"),
+      title: "Burger King",
+    },
+    {
+      id: 4,
+      source: require("../assets/Images/Starbucks_Corporation_Logo_2011 1.png"),
+      title: "MC Donalds",
+    },
+    {
+      id: 5,
+      source: require("../assets/Images/Domino's_pizza_logo 1.png"),
+      title: "KFC",
+    },
+  ];
   return (
     <SafeAreaView className="mt-6 px-6 bg-white min-h-full">
       <FlatList
         data={[]}
         keyExtractor={(item) => item.id}
+        showsVerticalScrollIndicator={false}
         ListHeaderComponent={() => (
           <View>
             <View className="justify-between flex-row items-start">
@@ -25,7 +81,7 @@ const Home = () => {
                   <Image source={require("../assets/Icons/map-pin.png")} />
                   <Text className="font-bold text-2xl">Home</Text>
                 </View>
-                <Text>9, suramya duples, nr nigram bus stand...</Text>
+                <Text>2, Egbedi Close, Ladoke Akintola. Garki 2, FCT...</Text>
               </View>
               <Image source={require("../assets/Icons/heart.png")} />
             </View>
@@ -71,7 +127,7 @@ const Home = () => {
                 </Text>
               </TouchableOpacity>
             </View>
-            <Mood />
+            <Mood posts={moodImages} />
             <View className="my-6 justify-between items-center flex-row">
               <Text className="text-2xl font-bold">
                 Popular moods you can get{" "}
@@ -82,7 +138,7 @@ const Home = () => {
                 </Text>
               </TouchableOpacity>
             </View>
-            <Mood />
+            <Popular posts={popularImages} />
           </View>
         )}
       />

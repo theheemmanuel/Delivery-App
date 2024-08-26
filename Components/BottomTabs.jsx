@@ -14,9 +14,9 @@ const BottomTabs = () => {
         headerShown: false,
         tabBarActiveTintColor: "#ff9d01",
         tabBarStyle: {
-          backgroundColor: "black",
           height: 60,
           marginTop: 2,
+          borderBlockColor: "gray",
         },
       }}
     >
