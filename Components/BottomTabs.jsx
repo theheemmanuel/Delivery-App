@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, Image, View } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../Screens/Home";
-import Settings from "./Settings";
-import Profile from "./Profile";
-import Updates from "../Screens/Updates";
+import Cart from "./Cart";
+import Profile from "../Screens/Profile";
+import Shops from "../Screens/Shops";
+import Catregory from "../Screens/Catregory";
 
 const BottomTabs = () => {
   const Tab = createBottomTabNavigator();
@@ -20,10 +21,91 @@ const BottomTabs = () => {
         },
       }}
     >
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Profile" component={Profile} />
-      <Tab.Screen name="Updates" component={Updates} />
-      <Tab.Screen name="Settings" component={Settings} />
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{
+          tabBarLabel: () => null,
+          tabBarIcon: ({ color }) => (
+            <Image
+              source={require("../assets/Icons/home.png")}
+              style={{
+                width: 24,
+                height: 24,
+                tintColor: color,
+              }}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Category"
+        component={Catregory}
+        options={{
+          tabBarLabel: () => null,
+          tabBarIcon: ({ color }) => (
+            <Image
+              source={require("../assets/Icons/category.png")}
+              style={{
+                width: 24,
+                height: 24,
+                tintColor: color,
+              }}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Shops"
+        component={Shops}
+        options={{
+          tabBarLabel: () => null,
+          tabBarIcon: ({ color }) => (
+            <Image
+              source={require("../assets/Icons/shop.png")}
+              style={{
+                width: 24,
+                height: 24,
+                tintColor: color,
+              }}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Cart"
+        component={Cart}
+        options={{
+          tabBarLabel: () => null,
+          tabBarIcon: ({ color }) => (
+            <Image
+              source={require("../assets/Icons/cart.png")}
+              style={{
+                width: 24,
+                height: 24,
+                tintColor: color,
+              }}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarLabel: () => null,
+          tabBarIcon: ({ color }) => (
+            <Image
+              source={require("../assets/Icons/user.png")}
+              style={{
+                width: 24,
+                height: 24,
+                tintColor: color,
+              }}
+            />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 };

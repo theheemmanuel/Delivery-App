@@ -7,7 +7,7 @@
     "icon": "./assets/Images/Logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/Images/successbro.png",
+      "image": "./assets/Images/Logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ff9d01"
     },

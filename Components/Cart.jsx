@@ -5,15 +5,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "../Screens/Login";
 import SignUp from "../Screens/SignUp";
 
-const Settings = () => {
+const Cart = () => {
   const Stack = createNativeStackNavigator();
-  return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen />
-    </Stack.Navigator>
-  );
+  return <SafeAreaView></SafeAreaView>;
 };
 
-export default Settings;
+export default Cart;
 
 const styles = StyleSheet.create({});

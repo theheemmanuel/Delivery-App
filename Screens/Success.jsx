@@ -9,7 +9,6 @@ const Success = ({ navigation }) => {
         <View className="items-center p-4">
           <Image
             resizeMode="contain"
-            tintColor="#ff9d01"
             className="h-[300px] w-[300px] mt-8"
             source={require("../assets/Images/successbro.png")}
           />
